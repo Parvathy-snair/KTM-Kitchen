@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM Kitchen</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
+
+
+  <link rel="shortcut icon" href="https://i.pinimg.com/736x/68/17/59/681759481b8436cdbb042b5d56293638.jpg" type="image/x-icon">
+<!-- Tailwind -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Flowbite CSS -->
+<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet">
+
+<!-- Your CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- nav bar -->
+     
+
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-default">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://d1w7312wesee68.cloudfront.net/6BkBhPvL8rKjekRAxCWsH1OYkNDrUUE1O64UXcYiEL0/ext:webp/quality:85/preset:xxl/plain/s3://toast-sites-resources-prod/restaurantImages/1d0f8ef2-2ddc-440b-8c42-a9d3db9f086d/dark_logo_transparentremovebgpreview.png" class="h-7" alt="Flowbite Logo">
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">KTM Kitchen</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="text-white bg-black hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Sign in</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#" class="block py-2 px-3 text-black bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Menu</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- bckgrnd image -->
+
+
+<section class="bg-center bg-no-repeat bg-[url('./images/main1.png')] bg-dark bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl">Taste the Difference</h1>
+        <p class="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48">Fresh ingredients, bold flavors, and delicious moments made just for you.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 md:space-x-4">
+            <button type="button" class="inline-flex items-center border-2 justify-center text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium rounded-base text-base px-5 py-3 focus:outline-none">
+                Order Now
+                <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+            </button>
+            
+        </div>
+    </div>
+</section>
+
+<section>
+
+        <h1 class="mb-2 mt-10 text-center text-3xl font-bold text-heading md:text-5xl lg:text-6xl">
+  <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">Our</span> Menu
+</h1>
+
+<p class="text-lg text-center font-normal text-body lg:text-xl">
+  Discover delicious dishes prepared with fresh ingredients and unforgettable flavors.
+</p>
+
+<img class="mt-5 h-auto max-w-full" src="https://5.imimg.com/data5/SELLER/Default/2022/11/WL/RG/VJ/32970822/217663441-916250415654071-1629050920220638229-n.jpg" alt="image description">
+
+
+
+
+
+</section>
+
+
+
+
+<!-- section -->
+ <section>
+    <h1 class="mb-2 mt-10 text-center text-3xl font-bold text-heading md:text-5xl lg:text-6xl">
+  <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">Our</span>Popular Dishes
+</h1>
+
+<p class="text-lg text-center font-normal text-body lg:text-xl">
+  Taste the favorites everyone loves, freshly prepared with rich flavors and quality ingredients.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-5">
+
+  <!-- YOUR CHICKEN BIRYANI CARD HERE -->
+
+
+  <!-- ALFAHAM -->
+
+  <div class="mt-4 bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+
+    <img class="rounded-t-base w-full h-96 object-cover"
+         src="https://i.pinimg.com/736x/e3/6c/93/e36c9378152b7b0d5128a87455e34bd5.jpg"
+         alt="Alfaham Chicken">
+
+    <div class="p-6 text-center">
+
+      <span class="inline-flex items-center bg-red-100 text-red-700 text-xs font-medium px-2 py-1 rounded">
+        🔥 Popular
+      </span>
+
+      <h5 class="mt-3 mb-2 text-2xl font-semibold text-heading">
+        Alfaham Chicken
+      </h5>
+
+      <p class="mb-4 text-secondary">
+        Juicy grilled chicken marinated with aromatic spices and smoky flavors.
+      </p>
+
+      <h4 class="mb-4 text-xl font-bold">₹320</h4>
+
+      <button class="inline-flex items-center text-white bg-black hover:bg-gray-800 font-medium rounded-lg text-sm px-4 py-2.5">
+        Order Now →
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- CHICKEN MANDI -->
+
+  <div class="mt-4 bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+
+    <img class="rounded-t-base w-full h-96 object-cover"
+         src="https://i.pinimg.com/736x/b6/ee/70/b6ee7059d16f3233e3fcc5d5877c5379.jpg"
+         alt="Chicken Mandi">
+
+    <div class="p-6 text-center">
+
+      <span class="inline-flex items-center bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1 rounded">
+        ⭐ Chef's Special
+      </span>
+
+      <h5 class="mt-3 mb-2 text-2xl font-semibold text-heading">
+        Chicken Mandi
+      </h5>
+
+      <p class="mb-4 text-secondary">
+        Fragrant Arabian rice served with tender chicken and traditional spices.
+      </p>
+
+      <h4 class="mb-4 text-xl font-bold">₹350</h4>
+
+      <button class="inline-flex items-center text-white bg-black hover:bg-gray-800 font-medium rounded-lg text-sm px-4 py-2.5">
+        Order Now →
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- BEEF ROAST -->
+
+  <div class="mt-4 bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+
+    <img class="rounded-t-base w-full h-96 object-cover"
+         src="https://i.pinimg.com/736x/1d/bd/c9/1dbdc9f627bdab27caf306ef8fd285c0.jpg"
+         alt="">
+
+    <div class="p-6 text-center">
+
+      <span class="inline-flex items-center bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded">
+        ❤️ Customer Favorite
+      </span>
+
+      <h5 class="mt-3 mb-2 text-2xl font-semibold text-heading">
+        Chicken Biriyani
+      </h5>
+
+      <p class="mb-4 text-secondary">
+        Aromatic basmati rice cooked with tender chicken and traditional spices.
+      </p>
+
+      <h4 class="mb-4 text-xl font-bold">₹160</h4>
+
+      <button class="inline-flex items-center text-white bg-black hover:bg-gray-800 font-medium rounded-lg text-sm px-4 py-2.5">
+        Order Now →
+      </button>
+
+    </div>
+  </div>
+  <!-- Fish Currry -->
+
+  <div class="mt-4 bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
+
+    <img class="rounded-t-base w-full h-96 object-cover"
+         src="https://i.pinimg.com/736x/7f/0e/d2/7f0ed22429f423bb936222a9dd77a604.jpg"
+         alt="">
+
+    <div class="p-6 text-center">
+
+      <span class="inline-flex items-center bg-green-100 text-green-700 text-xs font-medium px-2 py-1 rounded">
+        🔥 Popular
+      </span>
+
+      <h5 class="mt-3 mb-2 text-2xl font-semibold text-heading">
+        Fish Currry
+      </h5>
+
+      <p class="mb-4 text-secondary">
+        Kerala-style spicy beef roast served with crispy and flaky porotta.
+      </p>
+
+      <h4 class="mb-4 text-xl font-bold">₹150</h4>
+
+      <button class="inline-flex items-center text-white bg-black hover:bg-gray-800 font-medium rounded-lg text-sm px-4 py-2.5">
+        Order Now →
+      </button>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<form class=" mt-5 mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+
+  <h2 class="mb-2 text-3xl font-bold text-center">
+    Reserve Your Table
+  </h2>
+
+  <p class="mb-6 text-center text-gray-500">
+    Book your table and enjoy a memorable dining experience at KTM Kitchen.
+  </p>
+
+  <!-- NAME -->
+  <div class="mb-5">
+    <label class="block mb-2 text-sm font-medium">Your Name</label>
+
+    <input type="text"
+           class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full px-3 py-2.5"
+           placeholder="Enter your name"
+           required>
+  </div>
+
+
+  <!-- EMAIL -->
+  <div class="mb-5">
+    <label class="block mb-2 text-sm font-medium">Email Address</label>
+
+    <input type="email"
+           class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full px-3 py-2.5"
+           placeholder="Enter your email"
+           required>
+  </div>
+
+
+  <!-- PHONE -->
+  <div class="mb-5">
+    <label class="block mb-2 text-sm font-medium">Phone Number</label>
+
+    <input type="tel"
+           class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full px-3 py-2.5"
+           placeholder="Enter your phone number"
+           required>
+  </div>
+
+
+  <!-- DATE + TIME -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+
+    <div>
+      <label class="block mb-2 text-sm font-medium">Reservation Date</label>
+
+      <input type="date"
+             class="bg-gray-50 border border-gray-300 rounded-lg block w-full px-3 py-2.5"
+             required>
+    </div>
+
+
+    <div>
+      <label class="block mb-2 text-sm font-medium">Reservation Time</label>
+
+      <input type="time"
+             class="bg-gray-50 border border-gray-300 rounded-lg block w-full px-3 py-2.5"
+             required>
+    </div>
+
+  </div>
+
+
+  <!-- GUESTS -->
+  <div class="mb-5">
+
+    <label class="block mb-2 text-sm font-medium">
+      Number of Guests
+    </label>
+
+    <select class="bg-gray-50 border border-gray-300 rounded-lg block w-full px-3 py-2.5">
+
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>3 Guests</option>
+      <option>4 Guests</option>
+      <option>5+ Guests</option>
+
+    </select>
+
+  </div>
+
+
+  <!-- BUTTON -->
+
+  <button type="submit"
+          class="w-full text-white bg-black hover:bg-gray-800 font-medium rounded-lg text-sm px-5 py-3 transition duration-300">
+
+    Reserve Table
+
+  </button>
+
+</form>
+
+
+<!-- gallery -->
+<section>
+<h1 class="mb-2 mt-10 text-center text-3xl font-bold text-heading md:text-5xl lg:text-6xl">
+    Gallery
+  </h1>
+
+  <p class="text-lg text-center font-normal text-body lg:text-xl">
+  Take a glimpse at our delicious dishes, warm atmosphere, and memorable dining moments at KTM Kitchen.
+  </p>
+
+
+<div class= "mt-5  grid grid-cols-2 md:grid-cols-3 gap-4">
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/736x/83/79/87/837987f09f420d0af7aeb592a869c134.jpg" alt=""></div>
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/736x/93/58/7d/93587d25197842969bfd22ecfca43724.jpg" alt=""></div>
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/736x/50/bf/1f/50bf1fdaa37422a31d7f0295e37b3625.jpg" alt=""></div>
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/736x/45/8a/f8/458af882bdafd333f7e3d66266dbdb3b.jpg" alt=""></div>
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/736x/68/17/59/681759481b8436cdbb042b5d56293638.jpg" alt=""></div>
+
+    <div><img class="w-full h-64 object-cover rounded-lg" src="https://i.pinimg.com/1200x/68/c4/65/68c465dea357d61a078f8f44d8f79dc7.jpg" alt=""></div>
+    
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- review -->
+
+<section>
+<h1 class="mb-2 mt-10 text-center text-3xl font-bold text-heading md:text-5xl lg:text-6xl">
+    Customer Reviews
+  </h1>
+
+  <p class="text-lg text-center font-normal text-body lg:text-xl">
+   See what our happy customers have to say about their delicious experiences at KTM Kitchen.
+  </p>
+
+  <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- REVIEW 1 -->
+    <article class="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <img class="w-12 h-12 me-3 rounded-full"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRREw9szqOitIajLblsf1m6jkWObQe0q_VGxLIPot4mgeOHZSZ5k1W2z4o&s=10"
+             alt="Customer">
+
+        <div>
+          <h4 class="font-semibold">Anjali Nair</h4>
+          <p class="text-sm text-gray-500">Regular Customer</p>
+        </div>
+      </div>
+
+      <div class="mb-2 text-yellow-400 text-xl">★★★★★</div>
+
+      <h3 class="mb-2 text-lg font-semibold">
+        Absolutely delicious food!
+      </h3>
+
+      <p class="text-gray-600">
+        The Chicken Biryani was flavorful and freshly prepared.
+        The service was excellent. I would definitely visit again!
+      </p>
+    </article>
+
+
+    <!-- REVIEW 2 -->
+    <article class="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <img class="w-12 h-12 me-3 rounded-full"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ961dugLq9f6RTvMdgW2zozsN7Zgh1t9xmQd_SH2_KBlS45_u9OgL8sdUX&s=10"
+             alt="Customer">
+
+        <div>
+          <h4 class="font-semibold">Rahul Menon</h4>
+          <p class="text-sm text-gray-500">Food Lover</p>
+        </div>
+      </div>
+
+      <div class="mb-2 text-yellow-400 text-xl">★★★★★</div>
+
+      <h3 class="mb-2 text-lg font-semibold">
+        Amazing taste and service!
+      </h3>
+
+      <p class="text-gray-600">
+        The Alfaham Chicken was juicy, smoky, and perfectly seasoned.
+        Great atmosphere and friendly service.
+      </p>
+    </article>
+
+
+    <!-- REVIEW 3 -->
+    <article class="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <img class="w-12 h-12 me-3 rounded-full"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAvLBriF_xP8lmhQMMkjQRu2yGq5LR2eTNpwm2Ffb6o8kwMTT3RhoXOY&s=10"
+             alt="Customer">
+
+        <div>
+          <h4 class="font-semibold">Meera Thomas</h4>
+          <p class="text-sm text-gray-500">Happy Customer</p>
+        </div>
+      </div>
+
+      <div class="mb-2 text-yellow-400 text-xl">★★★★★</div>
+
+      <h3 class="mb-2 text-lg font-semibold">
+        Loved the dining experience!
+      </h3>
+
+      <p class="text-gray-600">
+        Delicious food, generous portions, and a lovely atmosphere.
+        KTM Kitchen is perfect for dining with family.
+      </p>
+    </article>
+
+
+    <!-- REVIEW 4 -->
+    <article class="p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <div class="flex items-center mb-4">
+        <img class="w-12 h-12 me-3 rounded-full"
+             src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+             alt="Customer">
+
+        <div>
+          <h4 class="font-semibold">Arjun Kumar</h4>
+          <p class="text-sm text-gray-500">Regular Visitor</p>
+        </div>
+      </div>
+
+      <div class="mb-2 text-yellow-400 text-xl">★★★★★</div>
+
+      <h3 class="mb-2 text-lg font-semibold">
+        One of my favorite restaurants!
+      </h3>
+
+      <p class="text-gray-600">
+        The food is always fresh and tasty. The staff are welcoming,
+        and the Chicken Mandi is definitely worth trying.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+
+</section>
+
+
+
+
+
+ <footer class="bg-neutral-primary">
+
+  <div class="mx-auto w-full max-w-screen-xl">
+
+    <div class="grid grid-cols-2 gap-8 px-4 py-10 md:grid-cols-4">
+
+      <!-- KTM KITCHEN -->
+
+      <div>
+
+        <h2 class="mb-6 text-lg font-semibold text-heading">
+          KTM Kitchen
+        </h2>
+
+        <p class="text-body">
+          Serving delicious food prepared with fresh ingredients, authentic flavors,
+          and a passion for creating memorable dining experiences.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+
+      <div>
+
+        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">
+          Quick Links
+        </h2>
+
+        <ul class="text-body font-medium">
+
+          <li class="mb-4">
+            <a href="#home" class="hover:underline">Home</a>
+          </li>
+
+          <li class="mb-4">
+            <a href="#abt" class="hover:underline">About Us</a>
+          </li>
+
+          <li class="mb-4">
+            <a href="#menu" class="hover:underline">Our Menu</a>
+          </li>
+
+          <li class="mb-4">
+            <a href="#gallery" class="hover:underline">Gallery</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- OPENING HOURS -->
+
+      <div>
+
+        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">
+          Opening Hours
+        </h2>
+
+        <ul class="text-body font-medium">
+
+          <li class="mb-4">
+            Mon - Fri: 10 AM - 10 PM
+          </li>
+
+          <li class="mb-4">
+            Saturday: 10 AM - 11 PM
+          </li>
+
+          <li class="mb-4">
+            Sunday: 11 AM - 11 PM
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- CONTACT -->
+
+      <div>
+
+        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">
+          Contact Us
+        </h2>
+
+        <ul class="text-body font-medium">
+
+          <li class="mb-4">
+            📍 KTM Kitchen, Kerala
+          </li>
+
+          <li class="mb-4">
+            📞 +91 98765 43210
+          </li>
+
+          <li class="mb-4">
+            ✉ info@ktmkitchen.com
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+
+    <div class="px-4 py-6 bg-neutral-secondary-soft md:flex md:items-center md:justify-between">
+
+      <span class="text-sm text-body text-center">
+        © 2026 KTM Kitchen. All Rights Reserved.
+      </span>
+
+
+      <!-- SOCIAL ICONS -->
+
+      <div class="flex mt-4 md:mt-0 space-x-5">
+
+        <a href="#" class="text-body hover:text-heading text-xl">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="#" class="text-body hover:text-heading text-xl">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="text-body hover:text-heading text-xl">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" class="text-body hover:text-heading text-xl">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>

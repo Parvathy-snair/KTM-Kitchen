@@ -1,0 +1,13 @@
+*{
+    
+    font-family: "Playfair Display", serif;
+}
+
+.food-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
